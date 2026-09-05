@@ -15,18 +15,12 @@ total = consumption * rate
 if is_senior == "yes":
     discount = total * 0.05
     total = total - discount
-    print(f"Senior discount applied: ₱{str(discount)}")
+    print(f"Senior discount applied: ₱{discount:.2f}")
     print("----- ELECTRIC BILL -----")
     print("Name: " + name)
-    print(f"Consumption: {str(consumption)} kWh")
-    print(f"Rate applied: ₱ {str(rate)} /kWh")
-    print(f"Total Due: ₱{str(total)}")
-elif is_senior == "no":
-    print("----- ELECTRIC BILL -----")
-    print("Name: " + name)
-    print(f"Consumption: {str(consumption)} kWh")
-    print(f"Rate applied: ₱ {str(rate)} /kWh")
-    print(f"Total Due: ₱{str(total)}")
+    print(f"Consumption: {consumption} kWh")
+    print(f"Rate applied: ₱{rate}/kWh")
+    print(f"Total Due: ₱{total:.2f}")
 else:
     ("Engk Engot!")
 
